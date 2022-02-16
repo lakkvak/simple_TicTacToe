@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    position: relative;
+}
+* {box-sizing: border-box;}
+.game{
+    margin: 100px auto;
+    width: 310px;
+    height: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-between;
+    position: relative;
+    
+}
+
+.score{
+    width: 120px;
+    height: 200px;
+    position: absolute;
+    top:5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+
+}
+
+.win{
+    position: absolute;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    width: 300px;
+    height: 100px;
+    background-color: gold;
+    transition: opacity 1s linear;
+    color: honeydew;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 15px;
+}
+.vis{
+    opacity: 1;
+}
+.span-mark{
+    font-size: 60px;
+    position: relative;
+    left:29%;
+    top:15%;
+}
+
+.sub-score{
+    width: 20px;
+    height: 20px;
+    
+   position: relative;
+   top:16px;
+}
+.cell{
+    
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+   
+   
+    
+}
+.cell:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
